@@ -11,7 +11,7 @@ Censei.isThisSafe = ({ image, text }) => {
     url: `${server_path}/api/V1/clarifai/predictImage`
   }, function (err, r, body) {
     // do handling here
-    res.send("Done!");
+    console.log("Done!!")
   }).form({file: fileBuffer.toString('base64')})
 };
 
